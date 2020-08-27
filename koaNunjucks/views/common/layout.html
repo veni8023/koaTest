@@ -1,0 +1,30 @@
+<!--
+ * @Author: veni
+ * @Date: 2019-11-07 17:16:33
+ * @LastEditors: veni
+ * @LastEditTime: 2019-11-18 17:15:44
+ * @Description: 
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Block （区块）定义了模板片段 并标识一个名字，在模板继承中使用 -->
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <!-- Include 标签可引入其他的模板，可以在多模板之间共享一些小模板 -->
+    {% include "./header.html" %}
+
+    {% block body %}
+    {% endblock %}
+    
+    {% include "./footer.html" %}
+
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

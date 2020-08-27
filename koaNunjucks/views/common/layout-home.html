@@ -1,0 +1,38 @@
+<!--
+ * @Author: veni
+ * @Date: 2019-11-07 17:16:33
+ * @LastEditors: veni
+ * @LastEditTime: 2019-11-12 16:07:33
+ * @Description: 集中管理所有的视图模板文件
+ -->
+ <!-- Extends 用来指定模板继承，被指定的模板为父级模板 -->
+{% extends "./layout.html" %} 
+
+{% block head %}
+<link rel="stylesheet" href="/home/main.css">
+{% endblock %}
+
+{% block body %}
+
+  {% block homeBanner %}
+  {% endblock %}
+
+<div class="show_time">
+    <div class="feature-con">
+        <ul class="feature fn-clear">
+            <li class="feature-item"><i class="ico"></i>
+                <h4 class="tit">插线板</h4>
+            </li>
+            <li class="feature-item"><i class="ico"></i>
+                <h4 class="tit">高端插座</h4>
+            </li>
+            <li class="feature-item"><i class="ico"></i>
+                <h4 class="tit">爱眼LED照明光</h4>
+            </li>
+            <li class="feature-item"><i class="ico"></i>
+                <h4 class="tit">断路器</h4>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
